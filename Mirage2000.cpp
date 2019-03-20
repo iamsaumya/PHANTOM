@@ -96,13 +96,13 @@ double calculateHValue(int row, int col, Pair dest)
 	return ((double)sqrt ((row-dest.first)*(row-dest.first)
 						+ (col-dest.second)*(col-dest.second)));
 }
-/* void showanswer(deque<Ans>Check_Answer){
-    set<Ans>::const_iterator itr;
+void showanswer(deque<Ans>Check_Answer){
+   deque<Ans>::const_iterator itr;
     cout<<"Answer:"<<endl;
     for(itr = Check_Answer.begin();itr!=Check_Answer.end();++itr){
-        cout<<(*itr)->first<<" "<<(*itr)->second<<endl;
+        cout<<itr->first<<","<<itr->second<<endl;
     }
-} */
+} 
 // A Utility Function to trace the path from the source
 // to destination
 void tracePath(cell cellDetails[][COL], Pair dest, int grid[][COL],Pair src )
@@ -194,7 +194,9 @@ int x_cor,y_cor=51;
     if(Answer == Check_Answer)
         cout<<"BOOM BOOM BOOM!!\n\nJ-e-M camp has been eradicated."<<endl;
     else {
-        cout <<"Oops This was no brainer dude! Anyway Try again next time :p"<<endl;
+    	cout <<"Oops This was no brainer dude! Anyway Try again next time :p"<<endl;
+    	cout<<"The correct path was "<<endl;
+	showanswer();
     }
 }
 
