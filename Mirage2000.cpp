@@ -102,7 +102,7 @@ void showanswer(deque<Ans>Check_Answer){
     for(itr = Check_Answer.begin();itr!=Check_Answer.end();++itr){
         cout<<itr->first<<","<<itr->second<<endl;
     }
-} 
+}
 // A Utility Function to trace the path from the source
 // to destination
 void tracePath(cell cellDetails[][COL], Pair dest, int grid[][COL],Pair src )
@@ -196,7 +196,7 @@ int x_cor,y_cor=51;
     else {
     	cout <<"Oops This was no brainer dude! Anyway Try again next time :p"<<endl;
     	cout<<"The correct path was "<<endl;
-	showanswer();
+	    showanswer(Check_Answer);
     }
 }
 
