@@ -12,6 +12,7 @@ typedef pair<int, int> Pair;
 // Creating a shortcut for pair<int, pair<int, int>> type
 typedef pair<double, pair<int, int> > pPair;
 
+//A Utility function to move our cursor to desired position using gotoxy()
 void gotoxy( int column, int line )
   {
   COORD coord;
@@ -23,6 +24,7 @@ void gotoxy( int column, int line )
     );
   }
 
+// A Utility function to get cursor's x co-ordinate
 int wherex()
   {
   CONSOLE_SCREEN_BUFFER_INFO csbi;
@@ -34,7 +36,8 @@ int wherex()
     return -1;
   return result.X;
   }
-//HELLO
+
+  // A Utility function to get cursors y co-ordinate
 int wherey()
   {
   CONSOLE_SCREEN_BUFFER_INFO csbi;
@@ -811,6 +814,7 @@ inline void wait ( short seconds )
   while (clock() < endwait);
 }
 
+// An inline function to add timer functionality.
 inline void CountDown()
 {
    gotoxy(190,18);
@@ -867,15 +871,15 @@ int main()
 	//grid 2
 	int grid2[ROW][COL] =
 	{
-		{ 1, 0, 1, 1, 1, 1, 0, 1, 1,1,0,0,0,0,1},
-		{ 1, 1, 0, 0, 1, 1, 0, 0, 1,1,1,0,1,0,1},
-		{ 1, 0, 1, 0, 1, 1, 0, 1,0,1,1,0,0,1,0},
-		{ 0, 1, 0, 1, 1, 0, 0, 0, 0,0,1,1,1,1,1},
-		{ 1, 1, 0, 0, 0, 0, 1, 0, 1,0,1,0,1,1},
-		{ 1, 0, 1, 1, 0, 1, 1, 1, 0,1,1,0,1,0,1},
-		{ 1, 0, 0, 0, 0, 0, 1, 0, 1,0,0,1,0,1,0},
-		{ 1, 0, 1, 1, 1, 1, 0, 1, 1,1,0,1,1,0,1},
-		{ 1, 1, 0, 1, 0, 0, 0, 0, 0,1,1,0,0,0,1}
+		{ 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 0,0,0,0,1},
+		{ 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 1,0,1,0,1},
+		{ 1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 1,0,0,1,0},
+		{ 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 1,1,1,1,1},
+		{ 1, 1, 0, 0, 0, 0, 1, 0, 1, 0, 1,0,1,1,0},
+		{ 1, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1,0,1,0,1},
+		{ 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0,1,0,1,0},
+		{ 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 0,1,1,0,1},
+		{ 1, 1, 0, 1, 0, 0, 0, 0, 0, 1, 1,0,0,0,1}
 	};
 
 	// Source is the left-most bottom-most corner
