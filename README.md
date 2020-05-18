@@ -1,11 +1,11 @@
 # MIG-21
-It is a maze-game I developed after knowing about A* star algorithm.I learned A* star algorithm and took help from [here](https://www.geeksforgeeks.org/a-search-algorithm/) .I loved this algorithm, while understanding and implementing it I learned about a lot about Dynamic Programming first time in my life. 
+It is a maze-game I developed after knowing about A* star algorithm. I learned A* star algorithm and took help from [here](https://www.geeksforgeeks.org/a-search-algorithm/). I loved this algorithm while understanding and implementing it I learned about a lot about Dynamic Programming first time in my life. 
 
 ## About Game
 This game is inspired by air-strikers done by Indian Airforce on J-e-M Camps. Therefore, In this game, your initial position is from IAF block/cell, and you have to reach to J-e-M camps with the smallest possible route. There is no undo or Uno reverse card in real life, just like that there is not an option to take your move back. If you mistakenly stepped on the wrong, your path will be not considered as a solution. 
 
 ## Instructions 
-1. It may happen that your screen will not fit the maze like the following images attached. In case of such discrepancy, change properties of your .exe file window. Right-click on titlebar and change to appropriate settings. 
+1. It may happen that your screen will not fit the maze-like the following images attached. In case of such discrepancy, change properties of your .exe file window. Right-click on the title bar and change to appropriate settings. 
 
 2. I have developed the numeric-pad movement based on the following structure.
 
